@@ -1,0 +1,133 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} 
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-image: url('https://wallpapercave.com/wp/wp6751226.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.clearfix:after{
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+    
+}
+.row{
+    max-width: 1180px;
+    margin: auto;
+}
+.logo{
+    height: 140px;
+    margin: auto;
+    float: left;
+    margin-top: 20px;
+}
+.menu{
+    float: right;
+    margin-top: 60px;
+
+}
+.menu li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+.menu li a{
+    padding: 5px 0;
+    color: rgb(176, 216, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 300px;
+}
+.row clearfix li:first-child{
+    color: blue;
+}
+.menu li a:hover{
+    border-bottom: 2px solid #bf49f1;
+
+}
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+h1{
+    color: #fff;
+    font-size: 300%;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    color: #fff9f9;
+    margin-bottom: 45px;
+    font-weight: lighter;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-transform: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+
+}
+.btn-full{
+    background-color: transparent;
+    color: #bf55ec;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+    text-decoration: none;
+    
+}
+.btn-full:hover{
+    background-color: aqua;
+}
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+.btn-nav:hover{
+    background-color: #bf55ec;
+}
+.colorchange{
+    animation: colorchangeshivi 1s infinite;
+}
+@keyframes colorchangeshivi{
+    0%{color: red;}
+    25%{color: green;}
+    50%{color: #d7f143;}
+    100%{color: rgb(94, 61, 211);}
+
+}
+@media only screen and (max-width: 1880px){
+    .main-content-header{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+@media only screen and (max-width: 998px){
+    h1{
+        font-size: 200%;
+    }
+}
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+    .menu{  display: block;}
+}
